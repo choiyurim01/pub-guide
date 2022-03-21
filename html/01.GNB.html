@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/guide.css">
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <title>기본 GNB</title>
+</head>
+
+<body class="pace-done gray-bg">
+
+  <div id="wrapper">
+
+    <!-- 우측 네비 st -->
+    <nav class="navbar-static-side border-right white-bg" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+          <li class="logo-wrap border-bottom">
+            <div class="profile-element">
+              <h1 class="logo">LOGO</h1>
+            </div>
+            <div class="logo-element p-0">
+              <h1 class="logo">logo</h1>
+            </div>
+          </li>
+          <li class="active"><a href="#">
+              <i class="bi bi-chat-left-fill"></i>
+              <span class="nav-label">menu1</span></a>
+              <ul class="nav nav-second-level collapse">
+                <li><a href="#">- sub menu</a></li>
+                <li><a href="#">- sub menu</a></li>
+              </ul></li>
+          <li><a href="#">
+              <i class="bi bi-person-fill"></i>
+              <span class="nav-label">menu2</span></a>
+              <ul class="nav nav-second-level collapse">
+                <li><a href="#">- sub menu</a></li>
+                <li><a href="#">- sub menu</a></li>
+              </ul></li>
+          <li><a href="#">
+              <i class="bi bi-gear-fill"></i>
+              <span class="nav-label">menu3</span></a>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="#">- sub menu</a></li>
+              <li><a href="#">- sub menu</a></li>
+            </ul>
+          </li>
+      </div>
+    </nav>
+    <!-- 우측 네비 ed -->
+
+    <!-- 좌측 메인 페이지 st -->
+    <div id="page-wrapper">
+
+      <!-- header st-->
+      <header class="header-wrapper border-bottom white-bg">
+        <div class="header-left">
+          <a class="navbar-minimalize btn btn-success"><i class="bi bi-list"></i></a>
+          <input type="text" class="form-control">
+        </div>
+        <ul class="header-right">
+          <li class="header-btn border-left">btn1</li>
+          <li class="header-btn border-left">btn2</li>
+          <li class="header-btn border-left">btn3</li>
+        </ul>
+      </header>
+      <!-- header ed-->
+
+      <main class="main"></main>
+
+    </div><!-- wrapper ed -->
+
+    <script>
+      $('.navbar-minimalize').click(function () {
+        $('body').toggleClass('mini-navbar');
+      });
+
+      //반응형 사이즈 조절
+      $(window).resize(function () {
+        if (window.outerWidth > 992) {
+          $('body').removeClass('mini-navbar');
+        } else if (window.outerWidth < 992) {
+          $('body').addClass('mini-navbar');
+        } else if (window.outerWidth < 768) {
+          $('body').removeClass('mini-navbar');
+        } else if (window.outerWidth > 768) {
+          $('body').addClass('body-small');
+        }
+      });
+
+      //네비 서브메뉴 이벤트
+      $('#side-menu > li').click(function () {
+        $(this).find('.nav-second-level').toggleClass('in');
+      });
+    </script>
+</body>
+
+
+</html>

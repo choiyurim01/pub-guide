@@ -1,0 +1,37 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+body {font-size: 14px;}
+dl,ol,ul {margin: 0; padding: 0; list-style: none;}
+
+
+/****************** GNB *****************/
+.logo-wrap {height: 60px; display: flex !important; justify-content: center; align-items: center;}
+.logo-wrap .logo {height: 16px; font-size: 18px; color: #000; margin: 0; font-weight: bold;}
+
+.nav > li.active {background-color: #d9edf7; border: none;}
+.nav > li.active > a { color: #1c84c6;}
+.nav > li > a {color: #888;}
+.nav > li > a > i {font-size: 16px;}
+ul.nav-second-level {background: #eee;} 
+.nav-second-level li a {background-color: #eee; padding: 14px 20px 14px 50px;}
+.nav-second-level li a:hover {background-color: #eee;}
+.mini-navbar .nav .nav-second-level {background-color:#eee; border: 1px solid #e7eaec; border-left: none;}
+.mini-navbar li.active .nav-second-level {left: 70px;}
+body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second-level {min-width: 180px;}
+
+
+/****************** header*****************/
+.header-wrapper {display: flex; justify-content: space-between; align-items: center; height: 60px; margin: 0 -15px;}
+.header-wrapper li {cursor: pointer; position: relative;}
+.header-wrapper li:hover {background: linear-gradient(#eee, #fff 15%); height: 59px;}
+
+.header-wrapper .header-right,
+.header-wrapper .header-left {display: flex; align-items: center;}
+.header-left .btn {padding: .5em .75em; margin: 0 1em;}
+.header-left .form-group {margin: 0;}
+.header-left .form-group input {background-color: #f5f6f9;}
+
+.header-right li { padding: 18px 24px;}
+.header-wrapper .sub-wrap {position: absolute; background-color: #fff; right: 0; top: 60px; width: 177px; border-top: none !important; box-shadow: 0px 5px 5px #ccc; z-index: 1;}
+.header-wrapper .sub-wrap .sub {padding: 1em 0;}
+.header-wrapper .sub-wrap .sub:hover {background: none; height: inherit; color: #1c84c6; background-color: #eee;}
