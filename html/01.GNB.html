@@ -33,17 +33,19 @@
           <li class="active"><a href="#">
               <i class="bi bi-chat-left-fill"></i>
               <span class="nav-label">menu1</span></a>
-              <ul class="nav nav-second-level collapse">
-                <li><a href="#">- sub menu</a></li>
-                <li><a href="#">- sub menu</a></li>
-              </ul></li>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="#">- sub menu</a></li>
+              <li><a href="#">- sub menu</a></li>
+            </ul>
+          </li>
           <li><a href="#">
               <i class="bi bi-person-fill"></i>
               <span class="nav-label">menu2</span></a>
-              <ul class="nav nav-second-level collapse">
-                <li><a href="#">- sub menu</a></li>
-                <li><a href="#">- sub menu</a></li>
-              </ul></li>
+            <ul class="nav nav-second-level collapse">
+              <li><a href="#">- sub menu</a></li>
+              <li><a href="#">- sub menu</a></li>
+            </ul>
+          </li>
           <li><a href="#">
               <i class="bi bi-gear-fill"></i>
               <span class="nav-label">menu3</span></a>
@@ -69,6 +71,12 @@
           <li class="header-btn border-left">btn1</li>
           <li class="header-btn border-left">btn2</li>
           <li class="header-btn border-left">btn3</li>
+          <li class="header-btn sub-btn border-left">sub</li>
+          <ul class="sub-wrap text-center">
+            <li class="sub">sub1</li>
+            <li class="sub">sub2</li>
+            <li class="sub">sub3</li>
+          </ul>
         </ul>
       </header>
       <!-- header ed-->
@@ -98,6 +106,15 @@
       //네비 서브메뉴 이벤트
       $('#side-menu > li').click(function () {
         $(this).find('.nav-second-level').toggleClass('in');
+      });
+
+      //sub-wrap 슬라이드
+      $('.sub-wrap').slideUp(0);
+      $('.sub-btn').on('mouseover', function () {
+        $('.sub-wrap').slideDown()
+      });
+      $('.header-wrapper').on('mouseleave', function () {
+        $('.sub-wrap').slideUp()
       });
     </script>
 </body>

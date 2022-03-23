@@ -31,7 +31,9 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 .header-left .form-group {margin: 0;}
 .header-left .form-group input {background-color: #f5f6f9;}
 
-.header-right li { padding: 18px 24px;}
-.header-wrapper .sub-wrap {position: absolute; background-color: #fff; right: 0; top: 60px; width: 177px; border-top: none !important; box-shadow: 0px 5px 5px #ccc; z-index: 1;}
+.header-right li { padding: 19px 24px;}
+.header-wrapper .sub-btn {width: 120px; text-align: center;}
+.header-wrapper .sub-btn:hover {color: #1c84c6;}
+.header-wrapper .sub-wrap {position: absolute; background-color: #fff; right: 0; top: 60px; z-index: 1; width: 119px; border-top: none !important; box-shadow: 0px 5px 5px #ccc;}
 .header-wrapper .sub-wrap .sub {padding: 1em 0;}
 .header-wrapper .sub-wrap .sub:hover {background: none; height: inherit; color: #1c84c6; background-color: #eee;}
