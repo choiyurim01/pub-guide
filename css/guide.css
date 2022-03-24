@@ -52,3 +52,4 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 
 
 /****************** form *****************/
+.bootstrap-tagsinput input {border: none; height: 100%; border-radius: 0;}
