@@ -7,18 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../css/jquery.timepicker.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/guide.css">
+  
   <script src="../js/jquery-3.1.1.min.js"></script>
   <script src="../js/jquery.timepicker.min.js"></script>
   <script src="../js/bootstrap-datepicker.js"></script>
   <script src="../js/bootstrap-tagsinput.js"></script>
+  <script src="../js/moment.min.js"></script>
+  <script src="../js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
   <title>form</title>
 </head>
 
-<body class="gray-bg m-3">
+<body class="containe gray-bg m-3">
 
   <div class="wrapper" style="max-width: 1200px; margin: 0 auto;">
     <h1 class="mb-2  font-weight-bold">폼 input 태그 <small>V4.6</small></h1>
@@ -212,12 +218,12 @@
     <!-- 수평 ed -->
 
     <!-- 스크립트 -->
-    <section class="white-bg p-3 mb-5">
+    <section>
       <h2 class="pb-3">스크립트</h2>
 
-      <form>
+      <form class="white-bg p-3 mb-5">
         <!-- datepicker st -->
-        <article>
+        <article class="mb-5">
           <h3>bootstrap-datepicker</h3>
 
           <div class="form-group row">
@@ -230,7 +236,7 @@
             <div class="input-group col-md-9">
               <input type="text" class="form-control datepicker">
               <div class="input-group-addon">
-                <i class="bi bi-grid-3x3-gap-fill"></i>
+                <span class="glyphicon glyphicon-th"></span>
               </div>
             </div>
           </div>
@@ -246,6 +252,28 @@
 
         </article>
         <!-- datepicker ed -->
+
+        <!-- timepicker -->
+        <article>
+          <h3>timepicker</h3>
+
+          <div class="form-group row">
+            <label for="group" class="labal-title col-md-2">jquery timepicker</label>
+            <input type="text" class="form-control jq-time col-md-9">
+          </div>
+
+          <div class="form-group row">
+            <label for="group" class="labal-title col-md-2">bootstrap timepicker</label>
+            <div class="input-group col-md-10">
+               <input type='text' class="form-control bt-time" />
+               <span class="input-group-addon">
+               <span class="glyphicon glyphicon-time"></span>
+               </span>
+            </div>
+
+        </article>
+        <!-- timepicker -->
+
       </form>
 
     </section>
@@ -256,12 +284,29 @@
 </body>
 
 <script>
+  
   $('.datepicker').datepicker({
     calendarWeeks: false,
     todayHighlight: true,
     autoclose: true,
     format: "yyyy/mm/dd",
     language: "kr"
+  });
+
+  $('.jq-time').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: false
+  });
+
+  $('.bt-time').datetimepicker({
+    format: 'LT'
   });
 </script>
 
