@@ -13,7 +13,7 @@ dl,ol,ul {margin: 0; padding: 0; list-style: none;}
 .nav > li > a {color: #888;}
 .nav > li > a > i {font-size: 16px;}
 ul.nav-second-level {background: #eee;} 
-.nav-second-level li a {background-color: #eee; padding: 14px 20px 14px 50px;}
+.nav-second-level li a {background-color: #eee;}
 .nav-second-level li a:hover {background-color: #eee;}
 .mini-navbar .nav .nav-second-level {background-color:#eee; border: 1px solid #e7eaec; border-left: none;}
 .mini-navbar li.active .nav-second-level {left: 70px;}
@@ -22,9 +22,9 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 #page-wrapper {padding: 0;}
 
 /* header */
-.header-wrapper {display: flex; justify-content: space-between; align-items: center; height: 60px;}
+.header-wrapper {display: flex; justify-content: space-between; align-items: center; height: 60px; box-sizing: border-box;}
 .header-wrapper li {cursor: pointer; position: relative;}
-.header-wrapper li:hover {background: linear-gradient(#eee, #fff 15%); height: 59px;}
+.header-wrapper li:hover {background: linear-gradient(#eee, #fff 15%);}
 
 .header-wrapper .header-right,
 .header-wrapper .header-left {display: flex; align-items: center;}
@@ -32,10 +32,11 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 .header-left .form-group {margin: 0;}
 .header-left .form-group input {background-color: #f5f6f9;}
 
-.header-right li { padding: 19px 24px;}
-.header-wrapper .sub-btn {width: 120px; text-align: center;}
+.header-right li {padding: 1.5em  2em;}
+.header-wrapper .sub-btn {width: 100px; text-align: center;}
 .header-wrapper .sub-btn:hover {color: #1c84c6;}
-.header-wrapper .sub-wrap {position: absolute; background-color: #fff; right: 0; top: 60px; z-index: 1; width: 119px; border-top: none !important; box-shadow: 0px 5px 5px #ccc;}
+.header-wrapper .sub-wrap {position: absolute; background-color: #fff; right: 0; top: 60px; z-index: 1; width: 157px;
+  border-top: none !important; box-shadow: 0px 5px 5px #ccc; text-align: center; box-sizing: border-box;}
 .header-wrapper .sub-wrap .sub {padding: 1em 0;}
 .header-wrapper .sub-wrap .sub:hover {background: none; height: inherit; color: #1c84c6; background-color: #eee;}
 
