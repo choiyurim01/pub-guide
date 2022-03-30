@@ -169,22 +169,28 @@
         <form class="white-bg p-3 mb-5">
           <div class="form-group row">
             <label for="group" class="labal-title col-md-2">아이디</label>
-            <input type="text" class="form-control col-md-9" placeholder="아이디를 입력해주세요.">
+            <div class="col-md-10">
+              <input type="text" class="form-control" placeholder="아이디를 입력해주세요.">
+            </div>
           </div>
 
           <div class="form-group row">
             <label for="group" class="labal-title col-md-2">password</label>
-            <input type="password" class="form-control col-md-9" placeholder="비밀번호를 입력해주세요.">
+            <div class="col-md-10">
+              <input type="password" class="form-control" placeholder="비밀번호를 입력해주세요.">
+            </div>
           </div>
 
           <div class="form-group row">
             <label for="group" class="labal-title col-md-2">콤보박스</label>
-            <select class="form-control col-md-9">
-              <option value="">선택 하세요.</option>
-              <option value="">옵션1</option>
-              <option value="">옵션2</option>
-              <option value="">옵션3</option>
-            </select>
+            <div class="col-md-10">
+              <select class="form-control">
+                <option value="">선택 하세요.</option>
+                <option value="">옵션1</option>
+                <option value="">옵션2</option>
+                <option value="">옵션3</option>
+              </select>
+            </div>
           </div>
 
           <fieldset class="form-group row">
@@ -228,12 +234,14 @@
 
           <div class="form-group row">
             <label for="group" class="labal-title col-md-3">input</label>
-            <input type="text" class="form-control col-md-8 datepicker">
+            <div class="col-md-9">
+              <input type="text" class="form-control datepicker">
+            </div>
           </div>
 
           <div class="form-group row">
             <label for="group" class="labal-title col-md-3">component</label>
-            <div class="input-group col-md-8">
+            <div class="input-group col-md-9">
               <input type="text" class="form-control datepicker">
               <div class="input-group-addon">
                 <span class="glyphicon glyphicon-th"></span>
@@ -243,7 +251,7 @@
 
           <div class="form-group row">
             <label for="group" class="labal-title col-md-3">range</label>
-            <div class="input-daterange input-group col-md-8 datepicker">
+            <div class="input-daterange input-group col-md-9 datepicker">
               <input type="text" class="form-control" placeholder="시작일">
               <div class="input-group-addon">-</div>
               <input type="text" class="form-control" placeholder="종료일">
@@ -259,7 +267,9 @@
 
           <div class="form-group row">
             <label for="group" class="labal-title col-md-3">jquery timepicker</label>
-            <input type="text" class="form-control jq-time col-md-8">
+            <div class=col-sm-9>
+              <input type="text" class="form-control jq-time">
+            </div>
           </div>
 
           <div class="form-group row">
@@ -277,9 +287,9 @@
         <!-- tagsinput st -->
         <article>
           <div class="form-group row">
-            <div class="input-group">
-              <label for="group" class="labal-title col-md-3"><h3>tagsinput</h3></label>
-            <input type="text" class="form-control col-md-8" data-role="tagsinput">
+            <label for="group" class="labal-title col-md-3"><h3>tagsinput</h3></label>
+            <div class="input-group col-md-8">
+              <input type="text" class="form-control" data-role="tagsinput">
             </div>
           </div>
         </article>
