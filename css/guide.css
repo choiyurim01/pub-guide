@@ -56,3 +56,9 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 /****************** form *****************/
 .bootstrap-tagsinput {width: 100%;}
 .bootstrap-tagsinput input {border: none; height: 100%; border-radius: 0;}
+
+.custom-file-label::after {content: '첨부';}
+.custom-radio input[type="radio"] {display: none;}
+.custom-radio label {display: inline-block; border: 1px solid #1c84c6; border-radius: 5px; padding: .5em 1em;
+  cursor: pointer; color: #1c84c6; font-weight: bold;}
+.custom-radio input:checked+label {background-color: #1c84c6; color: #fff;}

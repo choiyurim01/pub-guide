@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="../css/jquery.timepicker.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/guide.css">
-  
   <script src="../js/jquery-3.1.1.min.js"></script>
   <script src="../js/jquery.timepicker.min.js"></script>
   <script src="../js/bootstrap-datepicker.js"></script>
@@ -98,14 +97,6 @@
 
             <div class="form-group col-md-4">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="check1">
-                <label class="form-check-label" for="check1">
-                  체크박스 입니다.
-                </label>
-              </div>
-            </div>
-            <div class="form-group col-md-4">
-              <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="check2">
                 <label class="form-check-label" for="check2">
                   체크박스 입니다.
@@ -114,8 +105,16 @@
             </div>
             <div class="form-group col-md-4">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="check2">
-                <label class="form-check-label" for="check2">
+                <input class="form-check-input" type="checkbox" id="check3">
+                <label class="form-check-label" for="check3">
+                  체크박스 입니다.
+                </label>
+              </div>
+            </div>
+            <div class="form-group col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check4">
+                <label class="form-check-label" for="check4">
                   체크박스 입니다.
                 </label>
               </div>
@@ -123,25 +122,40 @@
 
             <div class="form-group col-md-4">
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="radio1">
-                <label class="form-check-label" for="radio1">
+                <input class="form-check-input" type="radio" name="radio2" id="radio2-1">
+                <label class="form-check-label" for="radio2-1">
                   라디오 버튼 입니다.
                 </label>
               </div>
             </div>
             <div class="form-group col-md-4">
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="radio1">
-                <label class="form-check-label" for="radio1">
+                <input class="form-check-input" type="radio" name="radio2" id="radio2-2">
+                <label class="form-check-label" for="radio2-2">
                   라디오 버튼 입니다.
                 </label>
               </div>
             </div>
             <div class="form-group col-md-4">
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="radio1">
-                <label class="form-check-label" for="radio1">
+                <input class="form-check-input" type="radio" name="radio2" id="radio2-3">
+                <label class="form-check-label" for="radio2-3">
                   라디오 버튼 입니다.
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="radio3">
+                <label class="form-check-label" for="radio3">
+                  인라인 라디오 버튼 입니다.
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="checkbox5">
+                <label class="form-check-label" for="checkbox5">
+                  인라인 체크박스 입니다.
                 </label>
               </div>
             </div>
@@ -194,8 +208,8 @@
           </div>
 
           <fieldset class="form-group row">
-            <legend class="col-form-label col-md-2 float-sm-left">라디오</legend>
-            <div class="col-sm-9">
+            <legend class="col-form-label col-md-2 float-md-left">라디오</legend>
+            <div class="col-md-9">
               <div class="form-check">
                 <input class="form-check-input" type="radio" id="gridRadios1">
                 <label class="form-check-label" for="gridRadios1"> 기본 라디오 버튼 입니다.</label>
@@ -204,7 +218,7 @@
           </fieldset>
 
           <div class="form-group row">
-            <div class="col-sm-9 offset-sm-2">
+            <div class="col-md-9 offset-md-2">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
@@ -267,7 +281,7 @@
 
           <div class="form-group row">
             <label for="group" class="labal-title col-md-3">jquery timepicker</label>
-            <div class=col-sm-9>
+            <div class=col-md-9>
               <input type="text" class="form-control jq-time">
             </div>
           </div>
@@ -275,10 +289,10 @@
           <div class="form-group row">
             <label for="group" class="labal-title col-md-3">bootstrap timepicker</label>
             <div class="input-group col-md-9">
-               <input type='text' class="form-control bt-time" />
-               <span class="input-group-addon">
-               <span class="glyphicon glyphicon-time"></span>
-               </span>
+              <input type='text' class="form-control bt-time" />
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-time"></span>
+              </span>
             </div>
 
         </article>
@@ -287,7 +301,9 @@
         <!-- tagsinput st -->
         <article>
           <div class="form-group row">
-            <label for="group" class="labal-title col-md-3"><h3>tagsinput</h3></label>
+            <label for="group" class="labal-title col-md-3">
+              <h3>tagsinput</h3>
+            </label>
             <div class="input-group col-md-9">
               <input type="text" class="form-control" data-role="tagsinput">
             </div>
@@ -302,7 +318,55 @@
 
     <!-- 커스텀 st -->
     <section>
-      
+      <h2 class="pb-3">커스텀</h2>
+
+      <form class="white-bg p-3 mb-5">
+
+        <div class="form-group row">
+          <h3 class="col-md-3">file 커스텀</h3>
+          <div class="col-md-9">
+            <div class="custom-file">
+              <label for="group" class="labal-title">지급증빙</label>
+              <input type="file" class="custom-file-input w-85p" id="inputGroupFile01">
+              <label class="custom-file-label" for="inputGroupFile01">파일을 첨부하세요.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <h3 class="col-md-3">라디오 버튼화</h3>
+          <div class="col-md-9">
+            <div class="form-group">
+              <div class="form-check form-check-inline custom-radio">
+                <input class="form-check-input" type="radio" id="radio4-1" name="radio4" checked>
+                <label class="form-check-label" for="radio4-1">
+                  <span>라디오를</span>
+                </label>
+              </div>
+              <div class="form-check form-check-inline custom-radio">
+                <input class="form-check-input" type="radio" id="radio4-2" name="radio4">
+                <label class="form-check-label" for="radio4-2">
+                  <span>버튼처럼</span>
+                </label>
+              </div>
+              <div class="form-check form-check-inline custom-radio">
+                <input class="form-check-input" type="radio" id="radio4-3" name="radio4">
+                <label class="form-check-label" for="radio4-3">
+                  <span>커스텀</span>
+                </label>
+              </div>
+              <div class="form-check form-check-inline custom-radio">
+                <input class="form-check-input" type="radio" id="radio4-4" name="radio4">
+                <label class="form-check-label" for="radio4-4">
+                  <span>했습니다.</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
     </section>
     <!-- 커스텀 ed -->
 
@@ -311,13 +375,19 @@
 </body>
 
 <script>
-  
+  //datepicker
   $('.datepicker').datepicker({
     calendarWeeks: false,
     todayHighlight: true,
     autoclose: true,
     format: "yyyy/mm/dd",
     language: "kr"
+  });
+
+
+  //timepicker
+  $('.bt-time').datetimepicker({
+    format: 'LT'
   });
 
   $('.jq-time').timepicker({
@@ -332,9 +402,11 @@
     scrollbar: false
   });
 
-  $('.bt-time').datetimepicker({
-    format: 'LT'
-  });
+   //파일명 추가
+   $("input[type='file']").on('change', function () {
+    $(this).next('.custom-file-label').html(event.target.files[0].name);
+  })
+
 </script>
 
 </html>
