@@ -9,6 +9,9 @@ dl,ol,ul {margin: 0; padding: 0; list-style: none;}
 .logo-wrap {height: 60px; display: flex !important; justify-content: center; align-items: center;}
 .logo-wrap .logo {height: 16px; font-size: 18px; color: #000; margin: 0; font-weight: bold;}
 
+#page-wrapper {padding: 0;}
+
+/* navi */
 .nav > li.active {background-color: #d9edf7; border: none;}
 .nav > li.active > a { color: #1c84c6;}
 .nav > li > a {color: #888;}
@@ -18,13 +21,10 @@ ul.nav-second-level {background: #eee;}
 .nav-second-level li a:hover {background-color: #eee;}
 .mini-navbar .nav .nav-second-level {background-color:#eee; border: 1px solid #e7eaec; border-left: none;}
 .mini-navbar li.active .nav-second-level {left: 70px;}
-body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second-level {min-width: 180px;}
-
-#page-wrapper {padding: 0;}
+body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-second-level {min-width: 180px;}
 
 /* header */
-.header-wrapper {display: flex; justify-content: space-between; align-items: center; height: 60px; box-sizing: border-box;
-  box-shadow: 0 5px 5px #ccc;}
+.header-wrapper {display: flex; justify-content: space-between; align-items: center; height: 60px; box-sizing: border-box;}
 .header-wrapper li {cursor: pointer; position: relative;}
 .header-wrapper li:hover {background: linear-gradient(#eee, #fff 15%);}
 
@@ -44,22 +44,22 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 
 
 /****************** main *****************/
-.main {width: 100%; height: calc(100vh - 75px); overflow: scroll; overflow-x: hidden; padding: 0 1em;}
+.main {width: 100%; height: calc(100vh - 60px); overflow: scroll; overflow-x: hidden; padding: 0 1em;}
+
+/* 
 .main.scroll::-webkit-scrollbar {width: 10px;}
 .main.scroll::-webkit-scrollbar-thumb {background-color: #888;}
 .main.scroll::-webkit-scrollbar-track {background-color: #ccc;}
-
-.main section {border-bottom: 3px solid #cae9fc;}
-.ibox {margin: 0; padding: 1em;}
-.ibox .ibox-content {height: 200px;}
-
+ */
 
 /****************** form *****************/
+/* custom */
 .custom-file-label::after {content: '첨부';}
 .custom-radio input[type="radio"] {display: none;}
 .custom-radio label {display: inline-block; border: 1px solid #1c84c6; border-radius: 5px; padding: .5em 1em; cursor: pointer; color: #1c84c6; font-weight: bold;}
 .custom-radio input:checked+label {background-color: #1c84c6; color: #fff;}
 
+/* tagsinput */
 .bootstrap-tagsinput {background-color: #fff; background-image: none; border: 1px solid #e5e6e7; border-radius: 1px;
   color: inherit; display: block; width: 100%; padding: 6px 12px; min-height: 35.59px; line-height: 28px;}
 .bootstrap-tagsinput input {border: none; box-shadow: none; outline: none;}
