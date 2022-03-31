@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/sweetalert2.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/guide.css">
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/sweetalert2.all.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <title>경고 창</title>
+</head>
+
+<body class="white-bg">
+
+  <div id="wrapper m-3">
+    <p class="">
+      <button class="btn btn-success" id="alert">확인창</button>
+    </p>
+
+    <p>
+      <button class="btn btn-success" id="confirm">제한 창</button>
+    </p>
+
+    <p class="mr-3">
+      <button class="btn btn-success" id="success">완료 창</button>
+    </p>
+  </div>
+
+  <a href="https://sweetalert2.github.io/#examples">참고 ></a>
+
+  <!-- js -->
+ <script>
+   //확인창
+  $("#alert").click(function () {
+    Swal.fire({
+      icon: 'question',
+      title: '확인',
+      text: '확인창 내용입니다.',
+      confirmButtonColor: '#1c84c6',
+      confirmButtonText: '확인',
+      showCancelButton: true,
+      cancelButtonColor: '#ccc',
+      cancelButtonText: '취소'
+    });
+  });
+
+  //제한 팝업
+  $("#confirm").click(function () {
+    Swal.fire({
+      icon: 'error',
+      title: '오류',
+      text: '제한창 내용입니다.',
+      confirmButtonColor: '#1c84c6',
+      confirmButtonText: '확인'
+    });
+  });
+
+  //제한 팝업
+  $("#success").click(function () {
+    Swal.fire({
+      icon: 'success',
+      title: '완료',
+      text: '완료창 내용입니다.',
+      confirmButtonColor: '#1c84c6',
+      confirmButtonText: '확인'
+    });
+  });
+ </script>
+
+</body>
+
+
+</html>
