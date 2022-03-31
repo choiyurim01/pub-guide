@@ -63,3 +63,10 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 .custom-radio label {display: inline-block; border: 1px solid #1c84c6; border-radius: 5px; padding: .5em 1em;
   cursor: pointer; color: #1c84c6; font-weight: bold;}
 .custom-radio input:checked+label {background-color: #1c84c6; color: #fff;}
+
+
+/****************** modal *****************/
+.modal .modal-footer {justify-content: center}
+.modal .modal-footer .btn {width: 150px; height: 40px;}
+.modal-notice {z-index: 2060 !important;}
+.modal-notice .modal-header {justify-content: flex-end;}

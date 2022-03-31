@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/guide.css">
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <title>모달창</title>
+</head>
+
+<body class="white-bg">
+
+  <div id="wrapper">
+
+    <p>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".modal">
+        모달 공통</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".modal-notice">
+        모달 알림 </button>
+    </p>
+
+    <!-- 모달 공통 st -->
+    <div class="modal fade">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h1>모달 타이틀</h1>
+            <button class="btn bi bi-x-lg" data-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body p-3">
+            <p>모달 공통 팝업 입니다.</p>
+            <p>자주 쓰는 버튼을 왼쪽에 배치합니다.</p>
+            <p>[등록] [취소]</p>
+            <p>[저장] [취소]</p>
+            <p>[초기화] [검색]</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">저장</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 모달 공통 ed -->
+
+    <!-- 모달 알림-->
+    <div class="modal modal-notice fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn bi bi-x-lg" data-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-3 text-center">
+            <h1>모달 알림입니다.</h1>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+
+</html>
