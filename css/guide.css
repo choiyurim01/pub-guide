@@ -56,7 +56,8 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover>.nav-second
 
 /****************** form *****************/
 .bootstrap-tagsinput {width: 100%;}
-.bootstrap-tagsinput input {border: none; height: 100%; border-radius: 0;}
+.bootstrap-tagsinput input {border: none; padding: 6px 12px; border-radius: 0;}
+.bootstrap-tagsinput input:focus {border: none;}
 
 .custom-file-label::after {content: '첨부';}
 .custom-radio input[type="radio"] {display: none;}
