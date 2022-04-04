@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css">
   <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
@@ -305,7 +304,7 @@
               <h3>tagsinput</h3>
             </label>
             <div class="input-group col-md-9">
-              <input type="text" class="form-control" data-role="tagsinput">
+              <input type="text" class="form-control" data-role="tagsinput" placeholder="반점(,)으로 구분합니다.">
             </div>
           </div>
         </article>
@@ -365,6 +364,23 @@
           </div>
         </div>
 
+        <div class="form-group row">
+          <h3 class="col-md-3">라디오 버튼 제어</h3>
+          <div class="col-md-9">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="radio5" value="on" id="radio5-1" checked>
+              <label class="form-check-label" for="radio5-1"><span>ON</span></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="radio5" value="off" id="radio5-2">
+              <label class="form-check-label" for="radio5-2"><span>OFF</span></label>
+            </div>
+            <div class="inline">
+              <input type="text" class="form-control text1">
+            </div>
+          </div>
+        </div>
+
       </form>
 
     </section>
@@ -384,10 +400,9 @@
     language: "kr"
   });
 
-
   //timepicker
   $('.bt-time').datetimepicker({
-    format: 'LT'
+    format: 'LT' //시간만
   });
 
   $('.jq-time').timepicker({
@@ -402,11 +417,19 @@
     scrollbar: false
   });
 
-   //파일명 추가
-   $("input[type='file']").on('change', function () {
+  //파일명 추가
+  $("input[type='file']").on('change', function () {
     $(this).next('.custom-file-label').html(event.target.files[0].name);
   })
 
+  //라디오 버튼제어
+  $("input:radio[name=radio5]").click(function () {
+    if($(this).val() == "on"){
+      $(".text1").attr("disabled", false);
+    }else if($(this).val() == "off"){
+      $("input.text1").attr("disabled", true);
+    }
+  });
 </script>
 
 </html>
