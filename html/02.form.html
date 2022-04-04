@@ -17,6 +17,7 @@
   <script src="../js/bootstrap-datepicker.js"></script>
   <script src="../js/bootstrap-tagsinput.js"></script>
   <script src="../js/moment.min.js"></script>
+  <script src="../js/ko.js"></script>
   <script src="../js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
   <title>form</title>
@@ -297,11 +298,27 @@
         </article>
         <!-- timepicker -->
 
+        <!-- datetimepicker -->
+        <article>
+          <div class="form-group row">
+            <label for="group" class="labal-title col-md-3">
+              <h3 class="m-0">datetimepicker</h3>
+            </label>
+            <div class="input-group col-md-9">
+              <input type="text" class="form-control bt-datetime">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-time"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- datetimepicker -->
+
         <!-- tagsinput st -->
         <article>
           <div class="form-group row">
             <label for="group" class="labal-title col-md-3">
-              <h3>tagsinput</h3>
+              <h3 class="m-0">tagsinput</h3>
             </label>
             <div class="input-group col-md-9">
               <input type="text" class="form-control" data-role="tagsinput" placeholder="반점(,)으로 구분합니다.">
@@ -417,6 +434,12 @@
     scrollbar: false
   });
 
+  //datetimepicker
+  $('.bt-datetime').datetimepicker({
+    sideBySide: true,
+    defaultDate: moment()
+  })
+
   //파일명 추가
   $("input[type='file']").on('change', function () {
     $(this).next('.custom-file-label').html(event.target.files[0].name);
@@ -424,9 +447,9 @@
 
   //라디오 버튼제어
   $("input:radio[name=radio5]").click(function () {
-    if($(this).val() == "on"){
+    if ($(this).val() == "on") {
       $(".text1").attr("disabled", false);
-    }else if($(this).val() == "off"){
+    } else if ($(this).val() == "off") {
       $("input.text1").attr("disabled", true);
     }
   });
