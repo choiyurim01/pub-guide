@@ -56,6 +56,7 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-seco
 /****************** main *****************/
 .main {width: 100%; height: calc(100vh - 60px); overflow: scroll; overflow-x: hidden; padding: 0 1em;}
 
+
 /****************** form *****************/
 /* custom */
 .custom-file-label::after {content: '첨부';}
