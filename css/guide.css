@@ -52,6 +52,7 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-seco
 .header-wrapper .sub-wrap .sub {padding: 1em 0;}
 .header-wrapper .sub-wrap .sub:hover {background: none; height: inherit; box-sizing: border-box; color: #1c84c6; background-color: #eee;}
 
+.btn-lg {font-size: 1.25rem !important; border-radius: 0.3rem !important;}
 
 /****************** main *****************/
 .main {width: 100%; height: calc(100vh - 60px); overflow: scroll; overflow-x: hidden; padding: 0 1em;}
