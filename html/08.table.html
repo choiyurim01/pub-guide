@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/guide.css">
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <title>table</title>
+  <style>
+    .table>thead>tr>th,
+    th {
+      background-color: #d9edf7;
+    }
+  </style>
+</head>
+
+<body class="gray-bg">
+
+  <div class="wrapper" style="max-width: 1200px; margin: 0 auto;">
+    <h1 class="font-weight-bold">table</h1>
+
+    <section class="row white-bg mb-5">
+      <!-- 기본 st -->
+      <article class="col-md-6">
+        <h2 class="pt-3 pb-3 m-0">기본</h2>
+        <table class="table table-bordered  table-hover">
+          <thead>
+            <tr>
+              <th>n</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>the Bird</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <!-- 기본 ed -->
+
+      <!-- 크기조절 st -->
+      <article class="col-md-6">
+        <h2 class="pt-3 pb-3 m-0">col 크기 조절</h2>
+        <table class="table table-bordered  table-hover">
+          <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 25%;">
+            <col style="width: 25%;">
+            <col style="width: 25%;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>n</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>the Bird</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <!-- 크기조절 ed -->
+    </section>
+
+    <!-- span st -->
+    <section class="row white-bg mb-5">
+      <!-- rowspan st -->
+      <article class="col-md-6">
+        <h2 class="pt-3 pb-3 m-0">rowspan</h2>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th>가나다</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th rowspan="2">가나다</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <!-- rowspan ed -->
+
+      <!-- colspan st -->
+      <article class="col-md-6">
+        <h2 class="pt-3 pb-3 m-0">colspan</h2>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th>가나다</th>
+              <td colspan="3">1</td>
+            </tr>
+            <tr>
+              <th>가나다</th>
+              <td colspan="2">1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>가나다</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <!-- colspan ed -->
+    </section>
+    <!-- span ed -->
+
+    <!-- span st -->
+    <section class="white-bg mb-5 p-3">
+      <!-- st -->
+      <article>
+        <h2 class="pt-3 pb-3 m-0">rowspan</h2>
+        <div data-sot-top="3" data-sot-left="3"style="width:300px; height:300px; overflow: hidden;" >
+          <table class="table table-bordered">
+            <tbody>
+              <thead>
+                <tr>
+                  <th>0</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                </tr>
+              </thead>
+              <tr>
+                <th>1</th>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+                <td>37</td>
+                <td>38</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>41</td>
+                <td>42</td>
+                <td>43</td>
+                <td>44</td>
+                <td>45</td>
+                <td>46</td>
+                <td>47</td>
+                <td>48</td>
+                <td>49</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>51</td>
+                <td>52</td>
+                <td>53</td>
+                <td>54</td>
+                <td>55</td>
+                <td>56</td>
+                <td>57</td>
+                <td>58</td>
+                <td>59</td>
+              </tr>
+              <tr>
+                <th>6</th>
+                <td>61</td>
+                <td>62</td>
+                <td>63</td>
+                <td>64</td>
+                <td>65</td>
+                <td>66</td>
+                <td>67</td>
+                <td>68</td>
+                <td>69</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>71</td>
+                <td>72</td>
+                <td>73</td>
+                <td>74</td>
+                <td>75</td>
+                <td>76</td>
+                <td>77</td>
+                <td>78</td>
+                <td>79</td>
+              </tr>
+              <tr>
+                <th>8</th>
+                <td>81</td>
+                <td>82</td>
+                <td>83</td>
+                <td>84</td>
+                <td>85</td>
+                <td>86</td>
+                <td>87</td>
+                <td>88</td>
+                <td>89</td>
+              </tr>
+              <tr>
+                <th>9</th>
+                <td>91</td>
+                <td>92</td>
+                <td>93</td>
+                <td>94</td>
+                <td>95</td>
+                <td>96</td>
+                <td>97</td>
+                <td>98</td>
+                <td>99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <!-- ed -->
+
+    </section>
+    <!-- span ed -->
+
+  </div>
+
+</body>
+
+</html>
