@@ -95,7 +95,13 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-seco
 .table > thead > tr > th,
 th {background-color: #d9edf7;}
 td {background-color: #fff;}
-
+.table > thead > tr > th, 
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {border-top: 1px solid #000; border-bottom: 1px solid #000; border-right: 1px solid #000;
+  border-left: 1px solid #000; box-sizing: border-box;}
 
 /* 첫번째 행 고정 */
 .table-wrap-1 {overflow-y: scroll; height: 200px;}
