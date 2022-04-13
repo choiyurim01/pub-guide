@@ -17,14 +17,18 @@
   <script src="../js/tui-code-snippet.min.js"></script>
   <script src="../js/tui-date-picker.js"></script>
   <script src="../js/tui-time-picker.js"></script>
+  <script src="../js/moment.js"></script>
   <script src="../js/tui-calendar.js"></script>
   <script src="../js/jquery-3.1.1.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/06.calender.js"></script>
   <title>캘린더</title>
   <style>
     .calendar-wrapper {
-      position: relative; /* 필수 */
-      width: 1200px;      /* width, height는 자유롭게 변경 */
+      position: relative;
+      /* 필수 */
+      width: 1200px;
+      /* width, height는 자유롭게 변경 */
       margin: 0 auto;
       min-height: 800px;
     }
@@ -54,12 +58,8 @@
     </div>
     <!-- 달력 ed -->
 
-  </div>
-  <script>
-    var cal = new tui.Calendar('#calendar', {
-      defaultView: 'month' // monthly view option
-    });
-  </script>
+  </div><!-- wrapper ed -->
+
 </body>
 
 </html>
