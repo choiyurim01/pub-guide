@@ -89,3 +89,36 @@ body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-seco
 .modal .modal-footer .btn {width: 150px; height: 40px;}
 .modal-notice {z-index: 2060 !important;}
 .modal-notice .modal-header {justify-content: flex-end;}
+
+
+/****************** table *****************/
+.table > thead > tr > th,
+th {background-color: #d9edf7;}
+td {background-color: #fff;}
+
+
+/* 첫번째 행 고정 */
+.table-wrap-1 {overflow-y: scroll; height: 200px;}
+.table-wrap-1 > .table thead {position: sticky; top: 0;}
+
+/* 첫번째 열 고정 */
+.table-wrap-2 {overflow: scroll;}
+.table-wrap-2 > .table {width: 1000px;}
+.table-wrap-2 > .table th:first-child,
+.table-wrap-2 > .table td:first-child {position: sticky; left: 0;}
+
+/* 1행 1열 고정 */
+.table-wrap-3 {overflow: scroll; height: 200px;}
+.table-wrap-3 > .table {width: 1000px;}
+.table-wrap-3 > .table thead {position: sticky; top: 0; z-index: 1;}
+.table-wrap-3 > .table th:first-child,
+.table-wrap-3 > .table td:first-child {position: sticky; left: 0;}
+
+/* 1행 1열, 2열 고정 */
+.table-wrap-4 {overflow: scroll; height: 200px;}
+.table-wrap-4 > .table {width: 1000px;}
+.table-wrap-4 > .table thead {position: sticky; top: 0; z-index: 1;}
+.table-wrap-4 > .table th:first-child,
+.table-wrap-4 > .table td:first-child {position: sticky; left: 0;}
+.table-wrap-4 > .table th:nth-child(2),
+.table-wrap-4 > .table td:nth-child(2) {position: sticky; left: 94.67px;}
