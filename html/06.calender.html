@@ -21,26 +21,39 @@
   <script src="../js/jquery-3.1.1.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
   <title>캘린더</title>
+  <style>
+    .calendar-wrapper {
+      position: relative; /* 필수 */
+      width: 1200px;      /* width, height는 자유롭게 변경 */
+      margin: 0 auto;
+      min-height: 95vh;
+    }
+  </style>
 </head>
 
 <body class="gray-bg">
 
   <div id="wrapper">
 
-    <div id="menu">
-      <span id="menu-navi">
-        <button type="button" class="btn btn-default btn-sm move-today" data-action="move-today">Today</button>
-        <button type="button" class="btn btn-default btn-sm move-day" data-action="move-prev">
-          <i class="calendar-icon ic-arrow-line-left" data-action="move-prev"></i>
-        </button>
-        <button type="button" class="btn btn-default btn-sm move-day" data-action="move-next">
-          <i class="calendar-icon ic-arrow-line-right" data-action="move-next"></i>
-        </button>
-      </span>
-      <span id="renderRange" class="render-range"></span>
+    <!-- 달력 st -->
+    <div class="calendar-wrapper">
+      <div id="menu">
+        <span id="menu-navi">
+          <button type="button" id="moveToday" class="btn btn-default btn-sm move-today" data-action="move-today">
+            Today</button>
+          <button type="button" id="movePrev" class="btn btn-default btn-sm move-day" data-action="move-prev">
+            <i class="calendar-icon ic-arrow-line-left" data-action="move-prev"></i>
+          </button>
+          <button type="button" id="moveNext" class="btn btn-default btn-sm move-day" data-action="move-next">
+            <i class="calendar-icon ic-arrow-line-right" data-action="move-next"></i>
+          </button>
+        </span>
+        <span id="renderRange" class="render-range"></span>
+      </div>
+      <div id="calendar"></div>
     </div>
+    <!-- 달력 ed -->
 
-    <div id="calendar"></div>
   </div>
   <script>
     var cal = new tui.Calendar('#calendar', {
